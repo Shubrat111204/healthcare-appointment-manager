@@ -16,7 +16,7 @@ const { startEmailRetryJob } = require('./src/jobs/emailRetryJob');
 const app = express();
 
 app.use(cors({
-  origin: 'https://healthcare-appointment-manager-puce.vercel.app',
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
